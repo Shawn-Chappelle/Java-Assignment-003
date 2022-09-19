@@ -11,7 +11,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // PUT YOUR IMPORTS HERE
-
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.nio.file.Path;
 public class HiddenSecrets {
     public static void getHiddenSecrets(File file) {
         try {
@@ -39,6 +41,12 @@ public class HiddenSecrets {
     }
 
     public static void main(String[] args) {
+        System.out.println("Insert file path:");
+        Scanner pathScanner = new Scanner(System.in);
+        String inputedPath = pathScanner.nextLine();
+        Path path = Paths.get(inputedPath);
+        File inputedFile = path.toFile();
+        getHiddenSecrets(inputedFile);
         // Put your code to request a file path,
         // read in a string from System.in,
         // convert that string into A Path type using Paths class,

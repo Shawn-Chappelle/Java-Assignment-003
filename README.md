@@ -35,17 +35,25 @@ java.nio.file.Path;
 1. Look up the latitude and longitude coordinates in an online map.
 1. Screenshot the map and add it into the **images** folder of this project,
 1. Last add image markdown below this line to load your map image.
+    ![Coordinates Image](images/Coordinates.JPG)
 
 ## PART 3 - Code Scanning and Interpretation
 * Look at the getHiddenSecrets method and identify the following parts:
     * What is the access modifer (public, private, protected)?
+      * The access modifier is public.
     * Is it a Class method or an object Instance method, how do you know?
+      * I am pretty sure it is a class method as on line 17 it is declared "public class HiddenSecrets".
     * What is its return data-type?
+      * It's return data type is void, there is no return.
     * Does it require any parameters, and if so, how many and of what type?
+      * I am unsure.
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
+      * I know what the for loops are but have no idea what they do and that is about all I kind of get.
     * What is not familiar to you?
+      * The use of "try" and "catch" and how it finds the information in the file.
     * Do the **for** loops make sense, and if so, tell me what you think they do?
+      * I have no idea what the for loops are doing.
 
 ## PART 4 - Turn in
 ### Same as the last 2 Weeks!
